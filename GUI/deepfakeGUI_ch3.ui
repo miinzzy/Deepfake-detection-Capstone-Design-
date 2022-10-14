@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1104</width>
+    <height>1044</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="realbtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>160</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>안동엄마까투리</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 85, 127);
+border-radius: 20px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Real Image</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fakebtn">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>160</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>안동엄마까투리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(0, 85, 127);
+border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Fake Image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="photo">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>660</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resultbtn">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>30</y>
+      <width>160</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>안동엄마까투리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(85, 85, 127);
+	border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>결과보기</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="finishbtn">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>30</y>
+      <width>160</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>안동엄마까투리</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(85, 85, 127);
+	border-radius: 20px;
+}</string>
+    </property>
+    <property name="text">
+     <string>종료하기</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="answerbtn">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>830</y>
+      <width>981</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>안동엄마까투리</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: white;
+	background-color: rgb(85, 85, 255);
+	border-radius: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>결과</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gradimg">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>480</y>
+      <width>299</width>
+      <height>299</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cropimg">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>160</y>
+      <width>299</width>
+      <height>299</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1104</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>realbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>realclick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fakebtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>fakeclick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>327</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>finishbtn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>finishclick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1100</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>746</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>realclick()</slot>
+  <slot>fakeclick()</slot>
+  <slot>finishclick()</slot>
+  <slot>resultclick()</slot>
+ </slots>
+</ui>
